@@ -36,4 +36,20 @@ public class Ciudad {
 	
 	@OneToOne(cascade = CascadeType.ALL)
 	Ubicacion ubicacionGeografica = new Ubicacion();
+
+	public Pais getPais() {
+		return pais;
+	}
+
+	public void setPais(Pais pais) {
+		this.pais = pais;
+	}
+
+	public Ubicacion getUbicacionGeografica() {
+		return ubicacionGeografica;
+	}
+
+	public void setUbicacionGeografica(Ubicacion ubicacionGeografica) {
+		this.ubicacionGeografica = ubicacionGeografica;
+	}
 	}

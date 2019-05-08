@@ -51,4 +51,13 @@ public class Pais {
 	
 	@ManyToOne(cascade = CascadeType.ALL)
 	Continente continente = new Continente();
+
+	public Continente getContinente() {
+		return continente;
+	}
+	public void setContinente(Continente continente) {
+		this.continente = continente;
+	}
+	
+	
 }
