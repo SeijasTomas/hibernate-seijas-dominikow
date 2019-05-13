@@ -31,19 +31,10 @@ public class Ciudad {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	@ManyToOne(cascade = CascadeType.ALL)
-	Pais pais = new Pais();
 	
 	@OneToOne(cascade = CascadeType.ALL)
-	Ubicacion ubicacionGeografica = new Ubicacion();
+	private Ubicacion ubicacionGeografica = new Ubicacion();
 
-	public Pais getPais() {
-		return pais;
-	}
-
-	public void setPais(Pais pais) {
-		this.pais = pais;
-	}
 
 	public Ubicacion getUbicacionGeografica() {
 		return ubicacionGeografica;
